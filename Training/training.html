@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <title>Training</title>
+    <link rel="stylesheet" href="training.css">
+  </head>
+  <body style="margin: 0px;">
+
+<div id="main_page_header">		
+    
+    <div id="main_page_logo_holder"></div>
+    
+    <div id="main_page_pulldown_image_holder" onclick="pulldown()">
+        <ul style="margin:0px; text-align: center;">
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white down arrow.png" style="height:40px; padding-right:30vw;"></li>
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white down arrow.png" style="height:40px; ">
+            </li>
+            <li style="display: inline-grid">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white down arrow.png" style="height:40px; padding-left: 30vw;">
+            </li>
+        </ul>
+    </div>
+    
+    <div id="nav_holder" class="nav_holder">
+        <ul class="navigation">
+        <li class="navigation">
+            <button class="navigation" id="nav_button" onclick="window.location.href='../index.html'">
+               <strong>Home</strong>
+            </button>
+        </li>
+    </ul>
+    </div>
+    
+    <div id="main_page_pullup_image_holder" class="pullup" onclick="pullup()">
+        <ul style="margin:0px; text-align: center;">
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white up arrow.png" style="height:40px; padding-right:30vw;"></li>
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white up arrow.png" style="height:40px; ">
+            </li>
+            <li style="display: inline-grid">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white up arrow.png" style="height:40px; padding-left: 30vw;">
+            </li>
+        </ul>
+    </div>
+</div>
+  	
+  	
+      <div class="foundationSection">
+          <h2 class="sectionTitle">My Training</h2>
+          <p class="sectionParagraph">In this program, I will be outlining a workout program that will entail both a muscle building aspect, and a cardiovascular fitness aspect. During this program, you will be taking part in multiple cardiovascular activities per day as well as strength training. The strength training aspect will consist of 5 training days. Splitting up these training days is optional, but I would recommend adding two rest days. This would look something like: Day 1, Day 2, Rest, Day 3, Day 4, Day 5, Rest, Day 1, etc.. Yet, everyday (even on rest days) you will participate in 2 cardio sessions. There will be one session in the morning and one at night consisting of biking, jumping rope, using eliptical. Your goal at each one of these sessions will simply be trying to raise your heart rate to a 60% - 70% for  30-60 minutes. Depending on if/when you have your strength training, you may do your cardio training after or before one of the workouts. 
+          </p>
+      </div>
+  		
+  	
+	
+      <div class="footer">
+          <h2 class="footer">Created By: Joshua Moller</h2>
+          <img class="comodo" src="https://www.mybigskystrong.com/images/comodo_secure_seal_100x85_transp.png">
+      </div> 
+      
+      <script type="text/javascript">
+        var navOpacityIncreaseCounter = 0;
+        var increaseInterval;
+        var decreaseInterval;
+        
+        function pulldown(){
+            var pulldownImageHolder = document.getElementById("main_page_pulldown_image_holder");
+            var navHolder = document.getElementById("nav_holder");
+            var pullupImageHolder = document.getElementById("main_page_pullup_image_holder");
+            var navButtons = document.getElementById("nav_button");
+            
+           
+            
+            pullupImageHolder.style.visibility = "visible";
+            pulldownImageHolder.style.visibility = "hidden";
+            navHolder.style.visibility = "visible";
+            navHolder.style.opacity = "0";
+            increaseInterval = setInterval(navOpacityIncrease,.001)
+        }
+        
+        function navOpacityIncrease(){
+                var navHolder = document.getElementById("nav_holder");
+                navOpacityIncreaseCounter = navOpacityIncreaseCounter + .01;
+                navHolder.style.opacity = navOpacityIncreaseCounter;
+            if(navOpacityIncreaseCounter >= 1 ){
+                clearInterval(increaseInterval);
+            }
+                
+            
+        }
+        
+        function pullup(){
+            var pulldownImageHolder = document.getElementById("main_page_pulldown_image_holder");
+            var navHolder = document.getElementById("nav_holder");
+            var pullupImageHolder = document.getElementById("main_page_pullup_image_holder");
+            
+            pullupImageHolder.style.visibility = "hidden";
+            pulldownImageHolder.style.visibility = "visible";
+            
+            decreaseInterval = setInterval(navOpacityDecrease,.001);   
+        }
+        
+       function navOpacityDecrease(){
+            var navHolder = document.getElementById("nav_holder");
+            
+            navOpacityIncreaseCounter = navOpacityIncreaseCounter - .01;
+            
+            navHolder.style.opacity = navOpacityIncreaseCounter;
+           
+            if(navOpacityIncreaseCounter <= 0 ){
+                clearInterval(decreaseInterval);
+                navHolder.style.visibility = "hidden";
+                
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>FCAFVO</title>
+        <link rel="stylesheet" href="fcafvo.css">
+    </head>
+    <body style="margin:0px;">
+    
+    <div class="header" id="header">
+        
+        <div class="header_nav">
+            <img class="header_nav_image" id="header_nav_image" src="https://openclipart.org/image/2400px/svg_to_png/221605/menu-icon.png">
+        </div>
+
+        <div class="header_title">
+            <p class="ht" id="ht"><strong>Fremont County Alliance Against Domestic Violence and Sexual Assault</strong>
+            </p>
+        </div>
+        
+        <div class="search_bar">
+        <form method="get" action="/search" id="search">
+            <input name="q" type="text" size="40" placeholder="Search..." />
+        </form>  
+    </div>
+        
+    </div>
+    
+    <div class="navigator" id="navigator">
+        <button class="navButton" id="homeButton">Home</button>
+        <button class="navButton">About Us</button>
+        <button class="navButton">Resources</button>
+        <button class="navButton">Get Involved</button>
+        <button class="navButton">Donate</button>       
+    </div>
+    
+    <div class="content_body">
+        
+        <div class="content_container" id="volunteering_content">
+            <h2 class="content_header" id="volunteering_header">Volunteering!</h2>
+            <img id="volunteering_image" src="https://static.wixstatic.com/media/37f0f1_d5431ef6202a405585c7d9bd610865ae~mv2.jpg/v1/fill/w_264,h_284,al_c,q_80,usm_0.66_1.00_0.01/37f0f1_d5431ef6202a405585c7d9bd610865ae~mv2.webp" >
+            <div id="volunteering_paragraph"><strong>The Alliance is a program that would not be possible without our amazing volunteers. They help us with a wide range of activities ranging fro taking hotline shifts on our crisis line to organizing Awareness Month events. Volunteers must be 18 years of age or older to provide on–call services to clients, have a valid driver’s license, provide proof of insurance, and legally able to sign a binding contract. Individuals wishing to become a volunteer for the program must successfully complete the 40 hour training as prescribed by DVS Rules & Regulations, pass a personal interview with the Executive Director or Associate Director of the program, pass a criminal and child abuse background check and be willing to sign a perpetual confidentiality agreement concerning victim/service user contacts.</strong></div>
+        </div>
+         
+        <div class="content_container" id="share_story_content">
+            <h2 class="content_header" id="share_story_header">
+                Share Your Story!
+            </h2>
+            <img id="share_story_image" src="https://static.wixstatic.com/media/37f0f1_96edbbcd3ffc49249c4b4c7b2ec396e4~mv2.jpg/v1/fill/w_264,h_284,al_c,q_80,usm_0.66_1.00_0.01/37f0f1_96edbbcd3ffc49249c4b4c7b2ec396e4~mv2.webp">
+            <div id="share_story_paragraph"><strong>
+                Here at the Alliance we feel that there is incredible healing power in sharing stories. The power of story lies in changing the narrative from one of victimization to a story of survival, strength and courage. When we Stand Up, Speak Up, and Listen Up we are able to take back control of our stories and redefine them in our own terms, and we are no longer defined by the story itself. 
+ 
+                Sharing your story of personal survival or sharing on behalf of someone you know may help you on your journey to wholeness. If you are interested in sharing your story simply click the link below and email it to director@fcafvo.org</strong>
+            </div>
+            
+        </div>
+        
+        <div class="content_container" id="community_content">
+            <h2 class="content_header" id="community_header">
+                Community Members
+            </h2> 
+            <img id="community_image" src="https://static.wixstatic.com/media/37f0f1_30538408592d4f2f825e242a66c3ca9f~mv2.jpg/v1/fill/w_264,h_285,al_c,q_80,usm_0.66_1.00_0.01/37f0f1_30538408592d4f2f825e242a66c3ca9f~mv2.webp">
+            <div id="community_paragraph"><strong>
+                One of the goals the Alliance has set for the upcoming years is increasing primary prevention and awareness rising. This means we are cultivating opportunities throughout the community to give educational presentations and to raise awareness. The staff is experienced in giving presentations and is always ready and excited for new opportunities to get out into the community. If you are interested in having an Alliance staff member come to your school, place of business or organization simply request a presentation by emailing the Director through the link below. We will get back to you and customize a presentation for your particular needs! </strong>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer" id="footer">
+                <div class="phoneNumbers">
+                <strong>
+                    <p class="phoneNumbers">24 HR CRISIS LINE:</p>
+                    <p class="phoneNumbers">(307)856-4734</p>
+                    <p class="phoneNumbers">OR</p>
+                    <p class="phoneNumbers">TOLL-FREE:</p>
+                    <p class="phoneNumbers">1-888-873-5208</p>
+                </strong>
+            </div>
+                <div class="footerLocation">
+                <strong>
+                    <p class="footerLocation">Location:</p>
+                    <p class="footerLocation">Main Office:</p>
+                    <p class="footerLocation">510 E. Washington St.</p>
+                    <p class="footerLocation">Riverton, WY</p>
+                </strong>
+                
+            </div>
+                <div class="footerCopyright">
+                <strong>
+                    <p class="footerCopyright">
+                        © 2016 by The Fremont County Alliance Against Domestic Violence and Sexual Assault.
+                    </p>
+                    <br class="footerCopyright">
+                </strong>
+            </div>
+            </div>
+    
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+        
+    <script>
+        $(function(){  
+            var x = 0;
+            var y = 0;
+            $("body").mousemove(function(e){
+                x = e.pageX;
+                y = e.pageY;
+                var scrollTop = $(window).scrollTop(); 
+                if(x >= 65 && y <= (100 + scrollTop)){
+                    $(".navigator").fadeOut(500);
+                }
+                if( y > (100 + scrollTop) && y<=400 && x >= 200){
+                    $(".navigator").fadeOut(500);
+                }
+                if( y > (450 + scrollTop) ){
+                    $(".navigator").fadeOut(500);
+                }
+            });
+            $("#header_nav_image").mouseover(function(event){
+                $(".navigator").fadeIn(500);
+            }); 
+        });
+        
+        
+    </script>
+        
+    </body>
+</html>

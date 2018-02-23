@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Indie+Flower|Josefin+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Mukta+Mahee');
+
+@media screen and (max-width: 600px){
+    
+    #private_programs_header{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px){
+    
+    .private_programs_header{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+   /*--------------------------FOOTER SMALL SCREEN---------------------------------*/
+    
+    .footer{
+        font-size: 15px
+    }
+    
+    #footer_news_header{
+        font-size: 25px;
+    }
+    #footer_news_content{
+        font-size: 17px;
+    }
+    
+    #contact_info_header{
+        font-size: 25px;
+    }
+    #contact_info_content{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .program_header{
+        font-size: 35px;
+    }
+    
+    
+    /*-------------------------------------------FOOTER FOR LARGE SCREEN-------------------------*/
+    
+    .footer{
+        font-size: 20px;
+    }
+    
+    #footer_news_header{
+        font-size: 35px;
+    }
+    #footer_news_content{
+        font-size: 23px;
+    }
+    
+    #contact_info_header{
+        font-size: 35px;
+    }
+    #contact_info_content{
+        font-size: 23px;
+    }
+}
+
+:root{
+    --darkBlue :#000928;
+    --yellow:#ebf02c;
+    --mildBlue:#04295e;
+    --lightBlue: #3582b9;
+    --white: #f5ebff;
+}
+
+body{
+    background-color: #f9f7f6;
+    font-family: 'Mukta Mahee','fantasy';
+}
+
+/*----------------------------STATIC MAIN MENU-----------------------------*/
+
+div.main_menu_box{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 4;
+    background-color: #f9f7f6;
+    top: 0px;
+}
+#main_menu_logo{
+    width: 300px;
+    position: absolute;
+    left:50%;
+    margin-left: -45vw;
+}
+#main_menu_logo:hover{
+    cursor: pointer;
+}
+#main_menu_member{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+#main_menu_login{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#main_menu_login:hover{
+    cursor: pointer;
+}
+#main_menu_member:hover{
+    cursor: pointer;
+}
+
+/*-----------------------------------MAIN CONTENT CONTAINER-----------------------------*/
+
+#main_container{
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------ADULT PROGRAMS HEADER----------------------*/
+
+#private_programs_header_container{
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+    padding: 0px;
+    background-color: #abd2c8;
+}
+#private_programs_header{
+    color: #23353B;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+}
+#private_programs_description{
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding: 10px;
+    font-size: 17px;
+}
+
+/*---------------------------------------TENNIS LEVELS AND PRICING AND DROP DOWNS -------------------------------*/
+
+.tennis_levels_holder{
+    width: auto;
+    color: #23353B;
+}
+.tennis_level_container{
+    margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+    background-color: rgba(171,210,200,.4);
+}
+.level_description_container{
+    display: inline-block;
+    width: 60%
+}
+.tennis_level_header{
+    font-style: oblique;
+    font-size: 30px;
+    text-align: left;
+    width: 60%;
+    padding-right: 5vw;
+}
+.level_cost{
+    font-size: 20px;
+    padding-right: 5vw;
+}
+.class_number_and_length{
+    font-size: 20px;
+    padding-right: 5vw;
+}
+.tennis_level_description{
+    text-align: left;
+    font-size: 17px;
+    padding-right: 5vw;
+}
+
+/*--------------------------------------TENNIS LEVEL DROP DOWNS-----------------------------------_*/
+
+.session_time_container{
+    width: 40%;
+    display: inline-block;
+}
+.select_session_text{
+    text-align: left;
+    font-size: 20px;
+}
+select {    
+    height: 60px;
+    color:#23353B;
+    background-color: rgba(250,250,250,.4);
+}
+
+.session_dropdown{
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid #23353B;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.session_dropdown:hover{
+    cursor: pointer;
+    background-color: rgba(35,53,59,.2);
+}
+.session_option{
+    
+}
+.disabled_selection{
+    font-size: 20px;
+}
+
+.time_dropdown{
+    
+}
+.time_option{
+    
+}
+
+.submit_button{
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    color:#23353B;
+    background-color: rgba(171,210,200,.7);
+    border: 0px solid black;
+}
+.submit_button:hover{
+    cursor: pointer;
+    background-color: rgba(35,53,59,.2);
+}
+
+
+/*-----------------------PRIVATE 4-PACK----------------*/
+
+#private_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#private_description_container{
+    float:left;
+}
+#private_header{
+
+}
+
+#private_session_time_container{
+    float:left;
+}
+
+/*-----------------------SEMI-PRIVATE 4-PACK----------------*/
+
+#semi_private_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#semi_private_description_container{
+    float:left;
+}
+#semi_private_header{
+
+}
+
+#semi_private_session_time_container{
+    float:left;
+}
+
+/*-----------------------3 PERSON GROUP 4-PACK----------------*/
+
+#three_person_group_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#three_person_group_description_container{
+    float:left;
+}
+#three_person_group_header{
+
+}
+
+#three_person_group_session_time_container{
+    float:left;
+}
+
+/*-----------------------4 PERSON GROUP 4-PACK----------------*/
+
+#four_person_group_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#four_person_group_description_container{
+    float:left;
+}
+#four_person_group_header{
+
+}
+
+#four_person_group_session_time_container{
+    float:left;
+}
+
+/*-----------------------5 OR MORE 4-PACK----------------*/
+
+#five_or_more_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#five_or_more_description_container{
+    float:left;
+}
+#five_or_more_header{
+
+}
+
+#five_or_more_session_time_container{
+    float:left;
+}
+
+
+
+/*-----------------------------------FOOTER------------------------------------*/
+
+.footer{
+    display: table;
+    background-color: #23353B;
+    width: 100%;
+    text-align: center;
+}
+.footer_item{
+    color: #f9f7f6;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+.footer_item:hover{
+    cursor: pointer;
+}f

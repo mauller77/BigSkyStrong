@@ -1,0 +1,34 @@
+header{
+    width:100%;
+    height:100px;
+    text-decoration-color:black;
+    background-color:red;
+    text-align:center;
+    font-size:80px;
+}	
+footer{
+	width:100%;
+	height:80px;
+	float:bottom;
+	text-align:center;
+	background-color:black
+}
+pre.footer{
+	font-size:10px
+	font-family:New Times Roman;
+	color:white;
+}	
+	
+table,td {
+	border:5px solid black;
+	border-collapse:collapse;
+}
+img.supplements {
+	float:left;
+	width:75px;
+	height:100px;
+}
+h1 {
+	text-align:center;
+	font-family:Arial;
+}

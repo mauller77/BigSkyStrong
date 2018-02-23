@@ -1,0 +1,154 @@
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Tennis On The Lake</title>
+    <link rel="stylesheet" href="TOTLindex.css">
+    <style>
+        
+    </style>
+</head>
+<body style="margin:0px;">
+    
+    <div class="main_menu_box" id="main_menu_box">
+        
+        <img id="main_menu_logo" src="images/TOTLLogo.png">
+        
+        <div id="main_menu_login" onclick="window.location.href='http://tennisonthelake.gotennissource.com/page.lasso?p=login&l=2'">
+            LOG IN
+        </div>
+        
+        <div id="main_menu_member" onclick="window.location.href = 'http://tennisonthelake.gotennissource.com/page.lasso?p=signuplake&l=2'">
+            CREATE ACCOUNT
+        </div>
+        
+        
+        
+    </div>
+    
+    <div id="main_content_container">
+        
+        <div id="picture_row">
+            <div id="indoor_image_container">
+                <img src="images/indoorImage.jpg" id="indoor_image" class="fade">
+            </div>
+            <div id="outdoor_image_container">
+                <img src="images/outdoorImage.jpg" id="outdoor_image" class="fade">
+            </div>
+        </div>
+        
+        <div id="button_row">
+            
+            <div id="indoor_button_container">
+                <button id="indoor_button" onclick="window.location.href = 'outdoorTennisTemp.html'">
+                    Indoor Tennis
+                </button>
+            </div>
+            
+            <div id="outdoor_button_container">
+                <button id="outdoor_button" onclick="window.location.href = 'outdoor/outdoorTennisOnTheLake.html'">
+                    Outdoor Tennis
+                </button> 
+            </div>
+    
+        </div>
+        
+
+        
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    
+    <script>
+        $(function(){  
+            var x = 0;
+            var y = 0;
+            var menuNavHolderHover;
+            $("body").mousemove(function(e){
+                x = e.pageX;
+                y = e.pageY;
+                menuNavHolderHover = $("#menu_nav_holder").is(":hover");
+                var scrollTop = $(window).scrollTop();
+                var windowWidth = $(window).width();
+                
+                if(x <= (windowWidth - 150) && y <= (60 + scrollTop)){
+                    $("#navigator_button_holder").fadeOut(500);
+                }
+                if( y > (60 + scrollTop) && y <= 560 && x <= (windowWidth - 200)){
+                    $("#navigator_button_holder").fadeOut(500);
+                }
+                if( y > (560 + scrollTop) ){
+                    $("#navigator_button_holder").fadeOut(500);
+                }
+            });
+            
+            
+/*------------ main menu login hover -------------------*/
+            
+            $("#main_menu_login").hover(
+                function(){
+                    $(this).css({cursor:"pointer"});
+                
+                    
+                },
+                function(){
+                   
+                    
+                }
+            );
+            
+/*------------ indoor courts hover -------------------*/
+            
+            $("#indoor_button").hover(
+                function(){
+                    $(this).css({cursor:"pointer"});
+                    $(this).css({backgroundColor: "#f9f7f6"}, 300);
+                    
+                    $(this).css({color: "#23353B"})
+                    
+                },
+                function(){
+                   $(this).css({backgroundColor:"#23353B"}, 300);
+                    
+                    $(this).css({color: '#f9f7f6'});
+                }
+            );
+            
+/* ---------------outdoor courts hover ---------------------*/
+            
+            $("#outdoor_button").hover(
+                function(){
+                    $(this).css({cursor:"pointer"});
+                    $(this).css({backgroundColor:"#f9f7f6"}, 300);
+                    
+                    $(this).css({color:'#23353B'});
+                    
+                },
+                function(){
+                   $(this).css({backgroundColor:"#23353B"}, 300);
+                    
+                    $(this).css({color:'#f9f7f6'});
+                    
+                }
+            )
+        });
+    </script>
+</body>
+    
+    
+    <div class="footer">
+       <strong>
+           Contact Information:
+           <br>
+           Phone: 773.278.8877 
+           <br>
+           Address: 3650 N Recreation Drive
+           <br>
+           Chicago, IL 
+           <br>
+           Email: info@tennisonthelake.com     
+        </strong>
+    </div>
+</html>

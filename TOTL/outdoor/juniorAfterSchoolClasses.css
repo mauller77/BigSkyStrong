@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Indie+Flower|Josefin+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Mukta+Mahee');
+
+@media screen and (max-width: 600px){
+    
+    #junior_programs_header{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px){
+    
+    .junior_programs_header{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+   /*--------------------------FOOTER SMALL SCREEN---------------------------------*/
+    
+    .footer{
+        font-size: 15px
+    }
+    
+    #footer_news_header{
+        font-size: 25px;
+    }
+    #footer_news_content{
+        font-size: 17px;
+    }
+    
+    #contact_info_header{
+        font-size: 25px;
+    }
+    #contact_info_content{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    
+    /*-------------------------------------------FOOTER FOR LARGE SCREEN-------------------------*/
+    
+    .footer{
+        font-size: 20px;
+    }
+    
+    #footer_news_header{
+        font-size: 35px;
+    }
+    #footer_news_content{
+        font-size: 23px;
+    }
+    
+    #contact_info_header{
+        font-size: 35px;
+    }
+    #contact_info_content{
+        font-size: 23px;
+    }
+}
+
+body{
+    background-color: #f9f7f6;
+    font-family: 'Mukta Mahee','fantasy';
+}
+
+/*----------------------------STATIC MAIN MENU-----------------------------*/
+
+div.main_menu_box{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 4;
+    background-color: #f9f7f6;
+    top: 0px;
+    border-bottom: 1px solid black;
+}
+#main_menu_logo{
+    width: 300px;
+    position: absolute;
+    left:50%;
+    margin-left: -45vw;
+}
+#main_menu_logo:hover{
+    cursor: pointer;
+}
+#main_menu_member{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+#main_menu_login{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#main_menu_login:hover{
+    cursor: pointer;
+}
+#main_menu_member:hover{
+    cursor: pointer;
+}
+
+/*-----------------------------------MAIN CONTENT CONTAINER-----------------------------*/
+
+#main_container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.2);
+}
+
+/*------------------------------JUNIOR PROGRAMS HEADER----------------------*/
+
+#junior_after_school_programs_header_container{
+    margin-top: 100px;
+    display: block;
+    padding: 0px;
+}
+#junior_after_school_programs_header{
+    background-color: rgba(171,210,200,.8);
+    font-family: 'Mukta Mahee','fantasy';
+    color: #23353B;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+/*---------------------------------------------------Junior Outdoor Maps Container--------------------------------*/
+
+#junior_outdoor_maps_container{
+    width: 100%;
+    text-align: center;
+}
+
+#map_list{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+}
+
+#jonquil_park_container{
+    width: 30vw;
+}
+#jonquil_park_header_container{
+    
+}
+#jonquil_park_map_container{
+    
+}
+#jonquil_map{
+    width: 100%;
+}
+
+#clarendon_park_container{
+    width: 30vw;
+}
+#clarendon_park_header_container{
+    
+}
+#clarendon_park_map_container{
+    
+}
+#clarendon_map{
+    width: 100%;
+}
+
+#sheridan_park_container{
+    width: 30vw;
+}
+#sheridan_park_header_container{
+    
+}
+#sheridan_park_map_container{
+    
+}
+#sheridan_map{
+    width: 100%;
+}
+
+/*------------------------------------JUNIOR PROGRAMS NAVIGATION-----------------------------*/
+
+#junior_programs_description{
+    width: 100%;
+    text-align: center;
+}
+
+#junior_programs_nav{
+    text-align: center;
+    background-color: #f9f7f6;
+}
+#jp_nav_ul{
+    text-decoration: none;
+    background-color: #f9f7f6;
+    border: 1px solid #23353B;
+    color: #23353B;
+}
+.jp_nav_li{
+    display: inline-block;
+    padding: 20px;
+}
+.jp_nav_li:hover{
+    background-color: #23353B;
+    color: #f9f7f6;
+    cursor: pointer;
+}
+
+/*---------------------------------------TENNIS LEVELS AND PRICING AND DROP DOWNS -------------------------------*/
+
+.tennis_levels_holder{
+    width: auto;
+    color: #23353B;
+}
+.tennis_level_container{
+    width: 70%;
+    margin-top: 20px;
+    padding: 20px;
+    width: auto;
+    background-color: rgba(171,210,200,.4);
+}
+.level_description_container{
+    width: 70%;
+    display: inline-block;
+}
+.tennis_level_header{
+    font-style: oblique;
+    font-size: 30px;
+    text-align: left;
+    width: 70%;
+    padding-right: 5vw;
+}
+.level_cost{
+    font-size: 20px;
+    padding-right: 5vw;
+}
+.class_number_and_length{
+    font-size: 20px;
+    padding-right: 5vw;
+}
+.tennis_level_description{
+    text-align: left;
+    font-size: 17px;
+    padding-right: 5vw;
+}
+.tennis_level_sessions{
+    
+}
+
+.select_day_text{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 70%;
+}
+
+/*--------------------------------SELECT THE DAY CLASSES----------------------------------------*/
+
+.saturday_div{
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 70%;
+}
+.saturday_div:hover{
+    cursor: pointer;
+    background-color: #abd2c8;
+}
+
+.sunday_div{
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 70%;
+}
+.sunday_div:hover{
+    cursor: pointer;
+    background-color: #abd2c8;
+}
+
+/*-----------------------Jonquil Park----------------*/
+#jonquil_park_header{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    border: 1px solid black;
+}
+
+#jp_5-7_program_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#jp_5-7_description_container{
+    float:left;
+}
+#jp_header{
+
+}
+
+#jp_5-7_select_day_container{
+    float:left;
+}
+
+/*-----------------------Clarendon Park----------------*/
+#clarendon_park_header{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    border: 1px solid black;
+}
+
+#cp_5-7_program_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#cp_5-7_description_container{
+    float:left;
+}
+#cp_header{
+
+}
+
+#cp_5-7_select_day_container{
+    float:left;
+}
+
+
+/*----------------------Sheridan Park----------------*/
+#sheridan_park_header{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    border: 1px solid black;
+}
+
+#sp_5-7_program_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#sp_5-7_description_container{
+    float:left;
+}
+#sp_header{
+
+}
+
+#sp_5-7_select_day_container{
+    float:left;
+}
+
+
+/*------------------------------8-10 YO PROGRAM CONTAINER---------------------------*/
+
+#eight_to_ten_yo_program_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#eight_to_ten_level_description_container{
+    float:left;
+}
+#eight_to_ten_header{
+    
+}
+
+#eight_to_ten_select_day_container{
+    float:left;
+}
+
+/*-------------------- 11-13 YO PROGRAM CONTAINER-----------------------*/
+
+#eleven_to_thirteen_yo_program_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 2px;
+}
+
+#eleven_to_thirteen_level_description_container{
+    float:left;
+}
+#eleven_to_thirteen_header{
+    
+}
+#eleven_to_thirteen_description{
+        
+}
+
+#eleven_to_thirteen_select_day_container{
+    float:left;
+}
+
+/*-------------------------------HIGH SCHOOL PROGRAM CONTAINER-------------------------*/
+
+#high_school_program_container{
+    display: table;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 50px;
+}
+
+#high_school_level_description_container{
+    float:left;
+}
+#high_school_header{
+    
+}
+#high_school_description{
+        
+}
+
+#high_school_select_day_container{
+    float:left;
+}
+
+/*-----------------------------------FOOTER------------------------------------*/
+
+.footer{
+    display: table;
+    background-color: #23353B;
+    width: 100%;
+    text-align: center;
+}
+.footer_item{
+    color: #f9f7f6;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+.footer_item:hover{
+    cursor: pointer;
+}

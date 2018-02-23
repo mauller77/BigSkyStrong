@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Indie+Flower|Josefin+Sans|Oswald');
+@media screen and (max-device-width: 763px) {    
+}
+body{
+    background:url("https://www.mybigskystrong.com/images/Montana1.jpg") no-repeat center center fixed; 
+    
+    background-size: cover;
+    
+    
+}
+
+#main_page_header{
+    position: fixed;
+    width:100%;
+    top:0px;
+}
+#main_page_logo_holder{
+    background: url("https://www.mybigskystrong.com/images/BSS.jpg") repeat center;
+    background-size:contain;
+    height:150px;
+}
+#main_page_pulldown_image_holder{
+    height:45px;
+    background-color: black;
+    position: fixed;
+    width:100%;
+    border-bottom: 2px solid white;
+}
+#main_page_pulldown_image{
+    
+}
+#main_page_pulldown_image_holder:hover{
+    background-color:darkred;
+    cursor: pointer;
+}
+@-webkit-keyframes show_nav_anim{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+#nav_holder{
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    top:150px;
+}
+ul.navigation{
+	text-align: center;
+    margin: 0px;
+    background-color: aqua;
+    padding: 0px;
+    border: 1px solid black;
+}
+li.navigation{
+    list-style: none;
+    list-style-type:none;
+    border: 1px solid black;
+}
+button.navigation{
+	color:brown;
+    font-size: 25px;
+    padding: 4px;
+    border: 0px;
+    background: none;
+    width: 100%;
+}
+button.navigation:hover{
+    background-color:cadetblue; 
+    cursor: pointer;
+}
+#main_page_pullup_image_holder{
+    height:45px;
+    background-color: black;
+    position: fixed;
+    width:100%;
+    top: 185px;
+    visibility: hidden;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+#main_page_pullup_image_holder:hover{
+    background-color:darkred;
+    cursor: pointer;
+}
+
+div.myNutritionSection{
+    margin: 20px 20px;
+    margin-top: 250px;
+    background: rgba(0,0,0,.8);
+    border-radius: 20px;
+    border: 2px solid white;
+
+}
+
+h2.sectionTitle{
+	text-align:center;
+	color: white; 
+	padding: 10px;
+    font-family: 'Oswald',sans-serif;
+    font-size: 200%;
+    text-decoration: underline;
+    margin: 0px;
+}
+p.sectionParagraph{
+	color: white; 
+	padding: 20px;
+	margin: 0px;
+    font-family: 'Indie Flower',sans-serif;
+    font-size: 20px
+   
+}
+h2.footer{
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+img.comodo{
+	float: right;
+}
+.myNutritionSection{
+    margin-top: 300px
+}

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Indie+Flower|Josefin+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Mukta+Mahee');
+
+@media screen and (max-width: 600px){
+    
+    #classes_header{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px){
+    
+    .horizontal_program_container{
+        font-size: 17px;
+    }
+    .program_header{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 500px){
+    
+    #classes_header{
+        font-size: 50px;
+    }
+  
+}
+
+@media screen and (max-width: 800px){
+
+    #picture_container{
+        height: 200px;
+    }
+    
+    #slideshow_content_container{
+        width:400px;
+        margin-left: -200px;
+    }
+    
+    ul.slides{
+        width: 2400px;
+    }
+    li.slide{
+        width: 400px;
+    }
+    
+    /*--------------------------FOOTER SMALL SCREEN---------------------------------*/
+    
+    .footer{
+        font-size: 15px
+    }
+    
+    #footer_news_header{
+        font-size: 25px;
+    }
+    #footer_news_content{
+        font-size: 17px;
+    }
+    
+    #contact_info_header{
+        font-size: 25px;
+    }
+    #contact_info_content{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #picture_container{
+        height: 400px;
+    }
+    
+    .horizontal_program_container{
+        font-size: 22px;
+    }
+    .program_header{
+        font-size: 35px;
+    }
+    
+    #slideshow_content_container{
+        margin-left: -300px;
+        width: 600px;
+    }
+    ul.slides{
+        width:3600px;
+    }
+    li.slide{
+        width:  600px;
+    }
+    
+    /*-------------------------------------------FOOTER FOR LARGE SCREEN-------------------------*/
+    
+    .footer{
+        font-size: 20px;
+    }
+    
+    #footer_news_header{
+        font-size: 35px;
+    }
+    #footer_news_content{
+        font-size: 23px;
+    }
+    
+    #contact_info_header{
+        font-size: 35px;
+    }
+    #contact_info_content{
+        font-size: 23px;
+    }
+}
+
+:root{
+    --darkBlue :#000928;
+    --yellow:#ebf02c;
+    --mildBlue:#04295e;
+    --lightBlue: #3582b9;
+    --white: #f5ebff;
+}
+
+body{
+    background-color: #f9f7f6;
+    font-family: 'Mukta Mahee','fantasy';
+}
+
+/*------------------------------FIXED MAIN MENU---------------------*/
+
+div.main_menu_box{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 4;
+    background-color: #f9f7f6;
+    top: 0px;
+}
+#main_menu_logo{
+    width: 300px;
+    position: absolute;
+    left:50%;
+    margin-left: -45vw;
+}
+#main_menu_logo:hover{
+    cursor: pointer;
+}
+#main_menu_member{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+#main_menu_member:hover{
+    cursor: pointer;
+}
+#main_menu_login{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#main_menu_login:hover{
+    cursor: pointer;
+}
+
+#main_container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.2);
+}
+
+#classes_header_container{
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+    padding: 0px;
+}
+#classes_header{
+    background-color: rgba(171,210,200,.8);
+    font-family: 'Mukta Mahee','fantasy';
+    color: #23353B;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-----------------------------------------messages---------------------------*/
+
+.message_container{
+    text-align: left;
+    background-color: #abd2c8;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    margin-bottom: 20px;;
+    padding: 20px;
+}
+#new_facility_message{
+
+}
+#page_intro_message{
+
+}
+#routes_message{
+   
+}
+#page_intro_2{
+  
+}
+#page_intro_3{
+   
+}
+#shuttle_message{
+   
+}
+
+/*--------------------------------PICTURES---------------------------*/
+
+#picture_container{
+    width: 100%;
+    background-color: #f9f7f6;
+    text-align: center;
+}
+#indoor_courts_picture{
+    width: 80%;
+    height: 80%;
+    margin-top: 20px;
+}
+
+/*-----------------------------------------BUTTON HOLDER------------------------------*/
+
+#main_content_container{
+    background-color: #abd2c8;
+}
+.horizontal_program_container{
+    width: 100%;
+    text-align: center;
+    background-color: #23353B;
+    color: #f9f7f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.horizontal_program_container:hover{
+    cursor: pointer;
+}
+#left_vertical_program_container{
+    width: 50%;
+    float: left;
+    text-align: center;
+    background-color: #abd2c8;
+    padding-bottom: 10px;
+}
+#right_vertical_program_container{
+    width: 50%;
+    float: left;
+    text-align: center;
+    background-color: #abd2c8;
+    padding-bottom: 10px;
+}
+
+.program_header{
+    font-family: 'Mukta Mahee','fantasy';
+}
+
+#kid_programs_container{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 2vw;
+    width: 40vw;
+}
+#kid_programs_header{
+    
+}
+
+
+#adult_programs_container{
+    margin-left: 7vw;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 40vw;
+}
+#adult_programs_header{
+
+}
+
+#private_programs_container{
+    margin-bottom: 10px;
+    margin-left: 7vw;
+    width: 40vw;
+    margin-top: 20px;
+}
+#private_programs_header{
+    
+}
+
+#video_lessons_container{
+    margin-left: 2vw;
+    margin-bottom: 10px;
+    width: 40vw;
+    margin-top: 20px;
+}
+#video_lessons_header{
+    
+}
+
+#slideshow_container{
+    background-color: #f9f7f6;
+}
+#slideshow_content_container{
+    overflow: hidden;
+    color: #08101C;
+    background-color: #f9f7f6;
+    position: relative;
+    left: 50%;
+    padding-top: 40px;
+    height: 290px;
+}
+ul.slides{
+    display: block;
+    height: 240px;
+    padding: 0;
+}
+li.slide{
+    list-style-type: none;
+    float: left;
+    background-color: #f9f7f6;
+    text-align: justify;
+}
+div.quote_container{
+    
+}
+
+/*----------------------------FOOTER----------------------------------*/
+
+.footer{
+    display: table;
+    background-color: #23353B;
+    width: 100%;
+    text-align: center;
+}
+.footer_item{
+    color: #f9f7f6;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+.footer_item:hover{
+    cursor: pointer;
+}
+

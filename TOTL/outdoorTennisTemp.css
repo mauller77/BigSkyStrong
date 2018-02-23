@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Indie+Flower|Josefin+Sans|Oswald');
+
+@media only screen and (max-width: 620px){
+    img.main_page_logo{
+        width: 300px;
+        margin-left: -150px;
+    }
+    
+    div.footer{
+        height: 50px;
+        margin-top: 80px;
+    }
+}
+@media only screen and (min-width: 620px){
+    img.main_page_logo{
+        width: 380px;
+        margin-left: -190px;
+    }
+}
+@media only screen and (min-width: 800px){
+   
+}
+
+
+
+:root{
+    --darkBlue :#000928;
+    --yellow:#ebf02c;
+    --mildBlue:#04295e;
+    --lightBlue: #3582b9;
+    --white: #f5ebff;
+}
+body{
+   background-color:#f9f7f6;
+}
+div.main_menu_box{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 4;
+    background-color: #f9f7f6;
+    top: 0px;
+    border-bottom: 1px solid black;
+}
+#main_menu_logo{
+    width: 300px;
+    position: absolute;
+    left:50%;
+    margin-left: -45vw;
+}
+#main_menu_logo:hover{
+    cursor: pointer;
+}
+#main_menu_member{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+#main_menu_member{
+    cursor: pointer;
+}
+#main_menu_login{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#main_menu_login:hover{
+    cursor: pointer;
+}
+
+
+#main_content_container{
+    height:auto;
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#button_row{
+    margin-top: 200px;
+    width: 100%;
+}
+
+#indoor_button_container{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#indoor_button{
+    width: 50%;
+    color: #f9f7f6;
+    font-family: 'Oswald','fantasy';
+    background-color: #23353B;
+    font-size: 40px;
+}
+
+#outdoor_button_container{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#outdoor_button{
+    width: 50%;
+    color: #f9f7f6;
+    font-family: "Oswald",'fantasy';
+    background-color: #23353B;
+    font-size: 40px;
+}
+
+div.footer{
+    width: 100%;
+    height: auto;
+    background-color: #abd2c8;
+    text-align: center;
+    margin-top: 50px;
+    float:left;
+}
+strong{
+    width: 100%;
+    font-family: 'Josefin Sans','comic sans';
+    color: #23353B;
+}

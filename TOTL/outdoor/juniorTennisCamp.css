@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Indie+Flower|Josefin+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Mukta+Mahee');
+
+@media screen and (max-width: 600px){
+    
+    #junior_programs_header{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px){
+    
+    .junior_programs_header{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+   /*--------------------------FOOTER SMALL SCREEN---------------------------------*/
+    
+    .footer{
+        font-size: 15px
+    }
+    
+    #footer_news_header{
+        font-size: 25px;
+    }
+    #footer_news_content{
+        font-size: 17px;
+    }
+    
+    #contact_info_header{
+        font-size: 25px;
+    }
+    #contact_info_content{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    
+    /*-------------------------------------------FOOTER FOR LARGE SCREEN-------------------------*/
+    
+    .footer{
+        font-size: 20px;
+    }
+    
+    #footer_news_header{
+        font-size: 35px;
+    }
+    #footer_news_content{
+        font-size: 23px;
+    }
+    
+    #contact_info_header{
+        font-size: 35px;
+    }
+    #contact_info_content{
+        font-size: 23px;
+    }
+}
+
+body{
+    background-color: #f9f7f6;
+    font-family: 'Mukta Mahee','fantasy';
+    margin: 0px;
+    padding: 0px;
+}
+
+/*----------------------------STATIC MAIN MENU-----------------------------*/
+
+div.main_menu_box{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 4;
+    background-color: #f9f7f6;
+    top: 0px;
+    border-bottom: 1px solid black;
+    font-family: 'Mukta Mahee','fantasy';
+}
+#main_menu_logo{
+    width: 300px;
+    position: absolute;
+    left:50%;
+    margin-left: -45vw;
+}
+#main_menu_logo:hover{
+    cursor: pointer;
+}
+#main_menu_member{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+#main_menu_login{
+    float: right;
+    color: #23353B;
+    font-family: 'Oswald','fantasy';;
+    font-size: 20px;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#main_menu_login:hover{
+    cursor: pointer;
+}
+#main_menu_member:hover{
+    cursor: pointer;
+}
+
+/*-----------------------------------MAIN CONTENT CONTAINER-----------------------------*/
+
+#main_container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.2);
+    font-family: 
+}
+
+/*------------------------------JUNIOR PROGRAMS HEADER----------------------*/
+
+#junior_tennis_camp_header_container{
+    margin-top: 100px;
+    display: block;
+    padding: 0px;
+}
+#junior_tennis_camp_header{
+    background-color: rgba(171,210,200,.8);
+    font-family: 'Mukta Mahee','fantasy';
+    color: #23353B;
+    margin: 0px;
+    padding: 0px;
+    font-size: 60px;
+    text-align: center;
+}
+
+/*--------------------------------JUNIOR TENNIS CAMP DESCRIPION--------------------------------------*/
+#tennis_camp_description_container{
+    text-align: center;
+    width: 100vw;
+    height: inherit;
+}
+
+#tennis_camp_description{
+    width: 50%;
+    float: left;
+}
+
+#tennis_camp_description_header{
+    font-size: 50px;
+}
+#tennis_camp_description_ages{
+    font-size: 25px;
+}
+#tennis_camp_description_location{
+    font-size: 25px;
+}
+#tennis_camp_description_details{
+    font-size: 25px;
+}
+
+#tennis_camp_map_container{
+    width: 50%;
+    float: left;
+}
+#tennis_camp_map{
+    
+}
+
+/*---------------------------------------HALF DAY CAMPS-----------------------*/
+
+#half_day_camp_container{
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #abd2c8;
+}
+#half_day_camp_box_container{
+    border: 1px solid black;
+    margin-top: 6vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-bottom: 3vw;
+    background-color: #f9f7f6;
+}
+
+#half_day_camp_description_box{
+    text-align: center;
+    width: 45%;
+    display: inline-table;
+}
+#half_day_camp_header_container{
+    font-size: 40px;
+}
+#half_day_camp_description_container{
+    
+}
+
+#half_day_camp_registration_container{
+    text-align: center;
+    width: 40%;
+    display: inline-table;
+}
+#half_day_am_button{
+    font-size: 20px;
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+#half_day_pm_button{
+    font-size: 20px;
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*----------------------------------------FULL DAY CAMPS-------------------------*/
+
+#full_day_camp_container{
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #abd2c8;
+    }
+#full_day_camp_box_container{
+    border: 1px solid black;
+    margin-top: 3vw;
+    margin-right: 6vw;
+    margin-left: 6vw;
+    margin-bottom: 6vw;
+    background-color: #f9f7f6;
+}
+
+#full_day_camp_description_box{
+    text-align: center;
+    width: 45%;
+    display: inline-table;
+}
+#full_day_camp_header_container{
+    font-size: 40px;
+}
+#full_day_camp_description_container{
+    
+}
+
+#full_day_camp_registration_container{
+    text-align: center;
+    width: 40%;
+    display: inline-table;
+}
+#full_day_am_button{
+    font-size: 20px;
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+#full_day_pm_button{
+    font-size: 20px;
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*-----------------------------------FOOTER------------------------------------*/
+
+.footer{
+    display: table;
+    background-color: #23353B;
+    width: 100%;
+    text-align: center;
+}
+.footer_item{
+    color: #f9f7f6;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+.footer_item:hover{
+    cursor: pointer;
+}

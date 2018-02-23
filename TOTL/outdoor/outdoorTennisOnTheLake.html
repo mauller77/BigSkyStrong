@@ -1,0 +1,238 @@
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Tennis On The Lake</title>
+    <link rel="stylesheet" href="outdoorTennisOnTheLake.css">
+</head>
+<body style="margin:0px;">
+    
+    <!--------------------------MAIN MENU BOX------------------------->
+    
+    <div class="main_menu_box" id="main_menu_box">
+        
+        <img id="main_menu_logo" src="../images/TOTLLogo.png" onclick="window.location.href='../index.html'">
+        
+        <div id="main_menu_login" onclick="window.location.href='http://tennisonthelake.gotennissource.com/page.lasso?p=login&l=2'">
+            LOG IN
+        </div>
+        
+        <div id="main_menu_member" onclick="window.location.href='http://tennisonthelake.gotennissource.com/page.lasso?p=signuplake&l=2'">
+            CREATE ACCOUNT
+        </div>
+        
+        
+        
+    </div>
+    
+    <!-----------------------INDOOR CLASSES HEADER------------------------------>
+    
+        <div id="classes_header_container">
+        
+        
+            <div id="classes_header">
+                <strong>
+                    Outdoor Classes and Programs
+                </strong>
+            </div>
+        
+        </div>
+    
+    <!----------------------------------FIRST PICTURE------------------------------>
+        
+        <div id="image_slideshow_container">
+            <div id="image_slideshow_content_container">
+                <ul class="image_slides">
+                    <li class="image_slide">
+                        <img src="../images/TennisOnTheLakeWavelandPark.jpg" id="outdoor_courts_picture">
+                    </li>
+                    <li class="image_slide">
+                        <img src="../images/TennisOnTheLakeKids.jpg" id="outdoor_kids_picture">
+                    </li>
+                    <li class="image_slide">
+                        <img src="../images/tennisonthelakeadults.jpg" id="outdoor_adults_picture">
+                    </li>
+                </ul>
+            </div>    
+        </div>
+  
+    
+    <!-------------------------------MAIN DESCRIPTION CONTAINER----------------------------->
+    
+    <div id="main_description_container">
+        <div id="description_1">
+            Tennis On The Lake is celebrating 16 years in Chicago! We offer group lessons, private and semi-private lessons, kids camps, and have a full service pro shop at Waveland Park. Our exclusive TOTL training system will help you become a better tennis player by strengthening the mind body connection and ensuring a solid foundation for future progress.
+        </div>
+        <div id="description_2">
+            You'll enjoy a great workout while getting some sun at our many outdoor courts in Chicago. You'll also get a chance to meet new tennis players from the Chicago area. Our staff of tennis professionals include some of the best local players and coaches who undergo thorough training in the TOTL system to provide consistent classes in a FUN, ACTIVE, and CREATIVE environment. 
+        </div>
+    </div>
+    
+    
+    <!-------------------------------MAIN BUTTON CONTAINER-------------------------->
+        
+        <div id="main_button_container">
+            
+            <!-----------------------------LEFT VERTICAL PROGRAM CONTAINER---------------------->
+            
+            <div class="horizontal_program_container">
+                
+                <ul class="horizontal_ul">
+            
+                    <li class="horizontal_li">
+                        <div id="adult_programs_container"  onclick="window.location.href = 'adultPrograms.html'">
+                            <div id="adult_programs_header" class="program_header" >
+                                Adult Programs
+                            </div>
+                        </div>
+                    </li>    
+                    
+                    <li class="horizontal_li">
+                        <div id="kid_programs_container">
+                            <div id="kid_programs_header" class="program_header" onclick="window.location.href = 'juniorPrograms.html'">
+                                Junior Programs
+                            </div>
+                        </div>
+                    </li>
+                        
+                </ul>
+                
+            </div>
+                
+            <div class="horizontal_program_container">
+                <ul class="horizontal_ul">
+                    <li class="horizontal_li">
+                        <div id="private_programs_container" onclick="window.location.href = 'https://tennisonthelake.gotennissource.com/page.lasso?p=packages_2&l=2'"> 
+                            <div id="private_programs_header" class="program_header">
+                                Private & Special Groups
+                            </div>
+                        </div>
+                    </li>    
+                        
+                    <li class="horizontal_li">
+                        <div id="matchplay_container"  onclick="window.location.href = 'https://tennisonthelake.gotennissource.com/page.lasso?p=packages_2&l=2'"> 
+                            <div id="matchplay_header" class="program_header">
+                                Matchplay
+                            </div>
+                        </div>
+                    </li>
+                </ul>    
+                
+            </div>
+            
+
+        </div>
+        
+    
+<!----------------------------------------------FOOTER------------------------------->
+    
+    <div class="footer">
+        <div class="footer_item" onclick="window.location.href='../Footer\ Links/totlAboutUs.html'">
+            About Us
+        </div>
+        <div class="footer_item" onclick="window.location.href='outdoorTennisOnTheLake.html'">
+            Classes & Programs
+        </div>
+        <div class="footer_item" onclick="window.location.href='../Footer\ Links/totlPolicy.html'">
+            Policy & Procedures
+        </div>
+        <div class="footer_item" onclick="window.location.href='../Footer\ Links/totlAnnouncements.html'">
+            Announcements
+        </div>
+        <div class="footer_item" onclick="window.location.href='https://tennisonthelake.gotennissource.com/page.lasso?p=contact_us_&l=2'">
+            Contact Us
+        </div>
+        <div class="footer_item" onclick="window.location.href='http://tennisonthelake.gotennissource.com/page.lasso?p=signuplake&l=2'">
+            Create My Account
+        </div>
+        <div class="footer_item" onclick="window.location.href='../Footer\ Links/totlFAQ.html'">
+            FAQ
+        </div>
+        <div class="footer_item" onclick="window.location.href='../Footer\ Links/totlPromotions.html'">
+            Promotions
+        </div>
+    </div>
+        
+   
+</body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    
+    <script src="/jquery-ui-1.12.1/jquery-ui.js"></script>
+    
+    <script>
+        
+//-----------------------------IMAGE SLIDESHOW---------------------------------------
+        
+        $(function(){
+        
+            var currentSlide = 1;
+            var $slider = $("#image_slideshow_content_container");
+            var $slides = $("ul.image_slides");
+            var $slide = $("li.image_slide");
+            var interval;
+            var leftMargin;
+            
+            function startSlide(){
+            
+                interval = setInterval(function(){
+                    
+                    leftMargin = -1 * $slide.width() * currentSlide;
+                    
+                  
+                    $slides.animate({marginLeft : leftMargin}, 1000);
+
+                    currentSlide++;
+
+                    if(currentSlide == 2){
+                        clearInterval(interval);
+                       backSlide();
+                    }
+
+                },5000);
+            
+            }
+            
+            function backSlide(){
+                currentSlide = 2;
+                interval = setInterval(function(){
+                    
+                    leftMargin = -1 * $slide.width() * currentSlide;
+                  
+                    $slides.animate({marginLeft : leftMargin}, 1000);
+
+                    currentSlide--;
+
+                    if(currentSlide == 0){
+                        clearInterval(interval);
+                       startSlide();
+                    }
+
+                },5000);
+            }
+            
+            function pauseSlide(){
+                clearInterval(interval);
+            }
+            
+        startSlide();
+                
+        });
+        
+        
+        $(function(){
+            $(".horizontal_program_container").hover(function(){
+                $(this).css({backgroundColor: '#f9f7f6'});
+                $(this).css({color: '#23353B'});
+            },function(){
+                $(this).css({backgroundColor: '#23353B'});
+                $(this).css({color: '#f9f7f6'});
+            })
+            
+           
+            
+        })
+    </script>
+    
+</html>

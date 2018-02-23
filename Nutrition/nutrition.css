@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Indie+Flower|Josefin+Sans|Oswald');
+
+body{
+    background:url("https://www.mybigskystrong.com/images/Montana1.jpg") no-repeat center center fixed; 
+    
+    background-size: cover;
+    
+    
+}
+
+#nav_holder{
+    width: 100%;
+}
+ul.nav{
+	text-align: center;
+    margin: 0px;
+    background-color: rgba(255,255,255,.5);
+    padding: 0px;
+}
+li.nav{
+    list-style: none;
+    list-style-type:none;
+}
+
+.nav_div{
+	color:black;
+    font-size: 25px;
+    padding: 4px;
+    border: 0px;
+    background: none;
+    width: 100%;
+}
+.nav_div:hover{
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+#home_nav_div{
+    
+}
+schedules_nav_div{
+    
+}
+reviews_nav_div{
+    
+}
+recipies_nav_div{
+    
+}
+
+div.myNutritionSection{
+    margin: 20px 20px;
+    background: rgba(0,0,0,.8);
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+h2.sectionTitle{
+	text-align:center;
+	color: white; 
+	padding: 10px;
+    font-family: 'Oswald',sans-serif;
+    font-size: 200%;
+    text-decoration: underline;
+    margin: 0px;
+}
+p.sectionParagraph{
+	color: white; 
+	padding: 20px;
+	margin: 0px;
+    font-family: 'Indie Flower',sans-serif;
+    font-size: 20px
+   
+}
+h2.footer{
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+img.comodo{
+	float: right;
+}
+.myNutritionSection{
+    margin-top: 300px
+}

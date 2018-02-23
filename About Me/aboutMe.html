@@ -1,0 +1,143 @@
+<html lang="en-US">
+    <head>
+      <title>About Big Sky Strong</title>
+      <link rel="stylesheet" href="aboutMe.css">
+    </head>
+    
+    <body style="margin: 0px;">
+  	 
+        <div id="main_page_header">
+            
+            <div id="main_page_logo_holder"></div>
+            
+            <div id="main_page_pulldown_image_holder" onclick="pulldown()">
+        <ul style="margin:0px; text-align: center;">
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white down arrow.png" style="height:40px; padding-right:30vw;"></li>
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white down arrow.png" style="height:40px; ">
+            </li>
+            <li style="display: inline-grid">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white down arrow.png" style="height:40px; padding-left: 30vw;">
+            </li>
+        </ul>
+    </div>
+            
+            <div id="nav_holder" class="nav_holder">
+                <ul class="navigation">
+                    <li>
+                        <button id="nav_button" class="navigation" onclick="window.location.href='../index.html'"><strong>Home</strong>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="main_page_pullup_image_holder" class="pullup" onclick="pullup()">
+        <ul style="margin:0px; text-align: center;">
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white up arrow.png" style="height:40px; padding-right:30vw;"></li>
+            <li style="display: inline-grid;">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white up arrow.png" style="height:40px; ">
+            </li>
+            <li style="display: inline-grid">
+                <img id="main_page_pulldown_image" src="https://www.mybigskystrong.com/images/white up arrow.png" style="height:40px; padding-left: 30vw;">
+            </li>
+        </ul>
+
+            </div>
+        </div>
+        
+    <div class="myNutritionSection">
+      <h2 class="sectionTitle">Big Sky Strong</h2>
+      <p class="sectionParagraph">Well, to start things off, I was born in Great Falls, Montana on the 19th of July in 1995. Then, in 1998, my family and I moved to Billings, Montana. I am really pleased that they made this decision because I am not a fan of Great Falls.
+        </p>      <p>I attended kindredgarten at my mothers school (which was actually inside of our house). After that, I went to Montesory School for Pre-school followed by Boulder Elementary School, Will James Middle School, Billings Senior High School, and finally, Roosevelt University.</p> 
+   </div>
+   
+   <div class="myNutritionSection">
+          <h2 class="sectionTitle">My Struggle</h2>
+       <p class="sectionParagraph">The first thing you should know about me is that I have many, many issues. First, I am moderately allergic to lactose and grass, but I am also severely allergic to chlorine. I suffer from something called Eczema which is kind of like a really itchy rash. This is also exaggerated by sweat and harsh chemicals in clothing. I have been made fun of since I first started school for being fat and having rashes all over my skin. As, you can imagine this has led me to suffer greatly in the gym and when I start to sweat when working out. I start to get rashes all over my body. For the longest time I have had to deal with people always looking at me wierd in the gym for sweating so much and having all these rashes, but the truth is that you just have to learn to ignore them. When you go to the gym, you are going to better yourself and anyone that is looking at you and judging you negatively for putting in an effort should be ashamed of themselves. I still catch myself thinking about how other people view me, but then I just have to keep my mind on the exercise, crank up the music, and rock the workout. <</p>
+        </div>
+	
+	<div class="myNutritionSection">
+          <h2 class="sectionTitle">Particle/Nuclear Physics</h2>
+          <p class="sectionParagraph">I worked for Roosevelt University and Dr. Brent Barker on the modification of particle collision code written in FORTRAN by Dr. Pawel Danielewicz. Dr. Danielewicz is a professor at Michigan State University and works in their physics department. Brent and I worked and modified the code so that it could be run using the linux fortran compiler, gfortran, as well as that intel fortran compiler, ifort. I also was able to get the code working using gfortran in Windows Powershell. We were also able to look at the isotope yields of colliding particles to analyze the output. I will put all of our data up on this website so that anyone can take a look once I get some time.
+              </p>
+      </div>
+       <div class="myNutritionSection">
+          <h2 class="sectionTitle">Tutoring</h2>
+          <p class="sectionParagraph">I work with Roosevelt Universitys Athletic department to aid in the tutoring of Freshman so that they can get adjusted to being a full time student athlete. It is a full time job and I tutor those student athletes that need a little boost every once in a while.
+              </p>
+      </div>
+       <div class="myNutritionSection">
+          <h2 class="sectionTitle">Roosevelt University Drug Consortium</h2>
+          <p class="sectionParagraph">In one of my math classes, we were sent on a mission to work with a mentor at Roosevelt University and work on a project involving statistical analysis and data mining. The project that I worked on had to deal with the rise in people being admitted into federal heroin treatment facilities. We had to find correlations within the patients information that could point to possible reasons for the increase. We worked primarily with SPSS, but I did more of the data mining with R. 
+              </p>
+      </div>
+	
+	
+       <div class="footer">
+        <h2 class="footer">Created By: Joshua Moller</h2>
+        <img class="comodo" src="https://www.mybigskystrong.com/images/comodo_secure_seal_100x85_transp.png">
+    </div> 	
+       
+        <script type="text/javascript">
+            var navOpacityIncreaseCounter = 0;
+            var increaseInterval;
+            var decreaseInterval;
+        
+            function pulldown(){
+            var pulldownImageHolder = document.getElementById("main_page_pulldown_image_holder");
+            var navHolder = document.getElementById("nav_holder");
+            var pullupImageHolder = document.getElementById("main_page_pullup_image_holder");
+            var navButtons = document.getElementById("nav_button");
+            
+           
+            
+            pullupImageHolder.style.visibility = "visible";
+            pulldownImageHolder.style.visibility = "hidden";
+            navHolder.style.visibility = "visible";
+            navHolder.style.opacity = "0";
+            increaseInterval = setInterval(navOpacityIncrease,.001)
+        }
+        
+            function navOpacityIncrease(){
+                var navHolder = document.getElementById("nav_holder");
+                navOpacityIncreaseCounter = navOpacityIncreaseCounter + .01;
+                navHolder.style.opacity = navOpacityIncreaseCounter;
+            if(navOpacityIncreaseCounter >= 1 ){
+                clearInterval(increaseInterval);
+            }
+                
+            
+        }
+        
+            function pullup(){
+            var pulldownImageHolder = document.getElementById("main_page_pulldown_image_holder");
+            var navHolder = document.getElementById("nav_holder");
+            var pullupImageHolder = document.getElementById("main_page_pullup_image_holder");
+            
+            pullupImageHolder.style.visibility = "hidden";
+            pulldownImageHolder.style.visibility = "visible";
+            
+            decreaseInterval = setInterval(navOpacityDecrease,.001);   
+        }
+        
+            function navOpacityDecrease(){
+            var navHolder = document.getElementById("nav_holder");
+            
+            navOpacityIncreaseCounter = navOpacityIncreaseCounter - .01;
+            
+            navHolder.style.opacity = navOpacityIncreaseCounter;
+           
+            if(navOpacityIncreaseCounter <= 0 ){
+                clearInterval(decreaseInterval);
+                navHolder.style.visibility = "hidden";
+                
+            }
+            
+        }
+        
+        </script>
+       
+    </body>
+</html>
