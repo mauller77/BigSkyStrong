@@ -9,78 +9,52 @@ body{
     
 }
 
-#main_page_header{
+#header{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
     position: fixed;
-    width:100%;
-    top:0px;
+    top: 0px;
+    border-bottom: 1px solid black;
+    background-color: white;
 }
-#main_page_logo_holder{
-    background: url("https://www.mybigskystrong.com/images/BSS.jpg") repeat center;
-    background-size:contain;
-    height:150px;
-}
-#main_page_pulldown_image_holder{
-    height:45px;
-    background-color: black;
-    position: fixed;
-    width:100%;
-    border-bottom: 2px solid white;
-}
-#main_page_pulldown_image{
-    
-}
-#main_page_pulldown_image_holder:hover{
-    background-color:darkred;
-    cursor: pointer;
-}
-@-webkit-keyframes show_nav_anim{
-    from{opacity: 0}
-    to{opacity: 1}
-}
+
 #nav_holder{
-    visibility: hidden;
-    position: fixed;
-    width: 100%;
-    top:150px;
-}
-ul.navigation{
-	text-align: center;
-    margin: 0px;
-    background-color: aqua;
-    padding: 0px;
-    border: 1px solid black;
-}
-li.navigation{
-    list-style: none;
-    list-style-type:none;
-    border: 1px solid black;
-}
-button.navigation{
-	color:brown;
-    font-size: 25px;
-    padding: 4px;
-    border: 0px;
-    background: none;
-    width: 100%;
-}
-button.navigation:hover{
-    background-color:cadetblue; 
-    cursor: pointer;
-}
-#main_page_pullup_image_holder{
-    height:45px;
-    background-color: black;
-    position: fixed;
     width:100%;
-    top: 185px;
-    visibility: hidden;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    height: 200px;
+    display: table;
+    position: fixed;
+    top:120px;
 }
-#main_page_pullup_image_holder:hover{
-    background-color:darkred;
+ul.nav{
+    text-align: center; 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: white;
+    padding-left: 200px;
+    border: 1px solid black;
+}
+li.nav{
+    display: inline-block
+}
+.nav_div{
+    padding:20px;
+    margin-right: 20px;
+    background-color: rgba(255,255,255,.7);
+    font-size: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.nav_div:hover{
+    background-color: rgba(0,0,0,.8);
+    color: white;
     cursor: pointer;
 }
+#totl_nav_div{
+    border-right: 1px solid black;
+}
+
 
 div.myNutritionSection{
     margin: 20px 20px;
